@@ -33,6 +33,7 @@
     
 }
 
+
 .nav-top p{
     margin-top: 0.68vw;
 
@@ -85,16 +86,38 @@
     color: white !important;
     
     position: absolute;
+    
     left: 40%;
     bottom: 65%;
     width: 55%;
-    z-index: 1;
-
+    z-index: 1000;
     position: fixed;
-    top: 0;
-    
+    top:0; 
     height: auto;
+    
 }
+
+  
+  
+
+  
+        /* .scroll-watcher {
+            height: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: green;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: scroll-watcher 5s linear infinite;
+        }
+        @keyframes scroll-watcher {
+            to {
+                transform: scaleX(1);
+            }
+        } */
+      
 .track-shipment{
     background-color: #F58220;
     border-radius: 7px;
@@ -114,18 +137,18 @@ font-weight: 350;
 }
 .custom-caption h5{
     font-size: 4vw;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.2vw;
     
 
 }
 
 .custom-caption b{
-    font-family: 'Rubik Mono One', monospace;
+    font-family: Rubik,sans-serif;
 
-    font-size: 5vw;
-    font-weight: bold;
-    letter-spacing:-2px;
+    font-size: 4.7vw;
+    font-weight: 700;
+
     
 }
 .custom-caption p{
@@ -344,7 +367,26 @@ font-weight: 350;
 .tittle{
     height: 80% !important;
     text-align: center;
+    position: relative !important;
+    display: block;
+    margin: 0 auto;
+
 }
+.why-choose-heading{
+    position: absolute;
+    top: 80%;
+    height: 60% !important;
+    right: 52% !important;
+    width: 20% !important;
+    color: #212529;
+    font-family: "Rubik", sans-serif;
+    font-size: 2vw !important;
+    font-weight: 600;
+    
+}
+
+  
+  
 .tittle > div{
     width: 100%;
     font-weight: 700;
@@ -352,11 +394,29 @@ font-weight: 350;
 
     
 }
-.why-choose-img{
-    margin-top: 12vw;
-    width:40%;
-    margin-left: 26vw;
-}
+
+/* .why-choose-img{
+        height: 6vh;
+        margin-top: 10vw;
+        width: 30%;
+        margin-left: 20vw;
+        border: 2px solid red;
+        
+        
+        
+    } */
+    .why-choose-img {
+        width: 30%;
+        position: absolute; 
+        top: 90%; 
+        right: 25%; 
+        transform: translateY(-50%); 
+        max-width: 50%;
+      }
+      
+
+
+
 /* @media only screen and (max-width: 576px){
     .track{
         padding: 0vw 0vw;
@@ -402,7 +462,18 @@ font-weight: 350;
     height: 18%;
     width: 26%;    
 } 
-
+.card-title-1{
+    color: #212529;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    
+    filter: contrast(200%) !important;
+}
+.card-text-1{
+    color: #212529;
+    font-size:1.1vw ;
+    font-family:Poppins, sans-serif ;
+}
 .section-2{
     
     margin-top: 5vw;
@@ -419,6 +490,8 @@ font-weight: 350;
     margin-left:3.7vw;
 }
 .section-3{
+    font-family: Rubik, sans-serif;
+
     margin-top: 2.3vw;
     overflow: hidden;
     
@@ -437,13 +510,18 @@ font-weight: 350;
 }
 .section-3-links a{
     
+    padding: 1vw 1.5vw;
+    
     
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
+
 .first-link:hover{
     background-color: #F58220;
     
+    height: 30%;
 }
 
 .b2c{
@@ -575,7 +653,7 @@ border: none;
         border-right: 10px solid transparent;
         border-top: 13px solid #fff; 
       }
-      .pradeep-img{
+      /* .pradeep-img{
         position: absolute;
         top: 25vw;
         left: 54vw;
@@ -620,7 +698,7 @@ border: none;
         color: #FFFFFF;
         font-family: poppins,sans-serif;
 
-      }
+      } */
       .section-8{
         margin-top: 7vw;
         position: relative !important;
@@ -708,29 +786,54 @@ border: none;
         color: #000000;
         
    
-        font-family: poppins,sans-serif;
+        font-family:Poppins,sans-serif;
       }
+      .card-body-2{
+        background-color: #FFFFFF;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 2px 10px;
+        
+      }
+     
       .card-title{
-        color: #8c8c8c;
-        font-family: poppins,sans-serif;
+        color: #8C8C8C;
+        font-family: Poppins, sans-serif;
+       
+        
         font-size: 1vw;
+        font-weight: 500;
+        
 
+      }
+      .hover-paragraph{
+        
+        
+        transition: all 2s ease 0s; 
+                
+      }
+      
+      .hover-paragraph:hover {
+        background-color: rgba(215, 154, 78, 0.831);
+        
+        
       }
       .card-text{
-        color: #000000;
-        font-family: poppins,sans-serif;
-        font-size: 1.4vw;
-        font-weight: 600;
+        color: #212529;
+        
+        font-size: 1.3vw;
+        font-size: 600;
+        width: 90%;
+        
       }
       .card-para{
-        color: #000000;
-        font-family: poppins,sans-serif;
-        font-size: 1.16vw;
+        color: #121212;;
+        
+    
+        font-size: 1.4vw;
       }
 
-      .card-text:hover{
+      /* .card-text:hover{
         background-color: #e5832e7e;
-      }
+      } */
       .section-10{
         margin-top: 2.8vw;
         overflow: hidden;
@@ -873,6 +976,7 @@ border: none;
 @media screen and (min-width: 781px) and (max-width: 1346px) {
     .section-input input[type=search]{
         width: 35%;
+        margin-left: 20%;
         
         
         margin-bottom: 9vw;
@@ -935,22 +1039,24 @@ border: none;
         width: 100%;
         
     }
-    .why-choose-para{
+    /* .why-choose-para{
         margin-top: 2vw;
-    }
-    .why-choose-img{
+    } */
+    /* .why-choose-img{
+        height: 10%;
         margin-top: 33vw;
         width: 50%;
         margin-left: 24vw;
         position: relative;
         
-    }
-    .why-choose-heading{
+    } */
+    /* .why-choose-heading h2{
         position: absolute;
-        right: 3vw;
-    top: 55vw;
-        color: grey;
-    }
+        color: red;
+        right: 10vw;
+         top: 50%; 
+        
+    } */
     .sec-8-img img{
         width: 100%;
     }
@@ -977,6 +1083,9 @@ border: none;
         object-fit: contain;
         padding: 0vw !important;
     }
+    .card-text{
+        width: 100%;
+    }
     .section-3-links{
         width: 100%;
     }
@@ -995,14 +1104,15 @@ border: none;
     
         
     }
-    .testimonial{
+    /* .testimonial{
         padding: 0vw;
         margin-bottom: 100vw;
-        height: auto;
+        
+
         
         margin-top: 0vw;
         
-    }
+    } */
     .a-job-role{
         position: absolute;
         top: 70vw;
@@ -1117,7 +1227,11 @@ border: none;
     }
    
     .why-choose-heading{
-        margin-top: 5vw;
+        width: 60% !important;
+        left: 5%;
+    }
+    .why-choose-img{
+        top: 100%;
     }
   
     .track-information{
@@ -1131,5 +1245,152 @@ border: none;
 }
 
 
+.carousel-b{
+    width: 50vw;
+    height: 30vh !important;
+   
+    margin: 5vw auto;
+    border-radius: 1.2vw;
+    background-color: white;
+    position: relative !important;
+    
 
 
+} 
+
+
+
+
+.para{
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 1.4vw 1.7vw;
+    margin-bottom: 2.3vw;
+    color: #212529;
+    font-family:Poppins, sans-serif;
+    font-size: 1.3vw;
+    
+    
+
+}
+.testimonial{
+    background-color: grey;
+    height: 80vh;
+    margin-top: 10vw;
+    position: relative !important;
+}
+
+.arrow-down{
+    position: absolute;
+    /* top: 18.3vw;
+    left: 1vw; */
+    border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-top: 12px solid #fff;
+top: 100%; 
+left: 2%; 
+
+
+height: 1px;
+
+
+
+}
+.aditya{
+    max-width: 20%;
+   
+    position: absolute;
+top: 107%;
+    left: 5%;
+    border-radius: 3vw;
+    background: grey;
+}
+.aditya-name{
+    color: #F58220;
+    font-family: Poppins, sans-serif;
+    position: absolute;
+    top: 108%;
+        left: 15%;
+        font-size: 1.29vw;
+        font-weight: 600;
+        
+
+}
+.aditya-job-role{
+    color: #FFFFFF;
+    font-family:Poppins,sans-serif;
+
+         position: absolute;
+        top: 120%;
+        left: 15%;
+        font-size: 1.2vw;
+        
+}
+
+@media screen and (max-width: 1060px){
+    .carousal-b{
+        width: 60vw;
+        height: 40vh !important;
+    }
+    .aditya-name{
+
+        position: absolute;
+        left: 17%;
+    }
+    .aditya-job-role{
+        position: absolute;
+        left: 17%;
+    }
+    
+
+}
+@media screen and (max-width: 796px){
+   .why-choose-img{
+    top: 132%;
+    width: 35% !important;
+    
+   }
+    .row.tittle{
+        position: relative !important;
+
+    }
+   .why-choose-heading{
+   font-family: sans-serif;
+   font-size: 0.1vw !important;
+    width: 50% !important;
+    height: 1vh !important;
+    top: 122%;
+    
+   }
+
+
+    .aditya-name{
+        left: 24%;
+    }
+    .aditya-job-role{
+        left: 24%;
+    }
+}
+@media screen and (max-width: 500px){
+    .h2, h2 {
+        font-size: calc(0.8rem + .6vw);
+        
+    
+    }
+.testimonial{
+height: 50vh;
+}
+.carousel-b {
+height: 15vh !important;
+}
+.aditya-name{
+        left: 35%;
+    }
+    .aditya-job-role{
+        left: 35%;
+    }
+
+
+
+
+}
