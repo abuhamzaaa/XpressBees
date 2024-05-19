@@ -66,7 +66,8 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <img src="images/whiteLogo.png" class="img" alt="">
+     <div id="getBackground">
+      <img src="images/whiteLogo.png" class="img" id="scroll-img" alt="">
       <nav class="navbar navbar-expand-lg scroll-watcher">
         <div class="container-fluid nav-hamberger ">
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -92,7 +93,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item ">
-                <a class="nav-link active color-white" aria-current="page" href="#">AboutUs</a>
+                <a class="nav-link active color-white" aria-current="page" href="aboutus.html">AboutUs</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link color-white" href="#">careers</a>
@@ -130,7 +131,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link track-shipment" href="#">Track Shipment</a>
+                <a class="nav-link track-shipment" id="getQuoteLink" href="#" >GET QUOTE</a>
               </li>
              
             </ul>
@@ -138,6 +139,29 @@
           </div>
         </div>
       </nav>
+      </div>
+<!-- The Modal -->
+
+<div id="quoteModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="quoteForm">
+          <label for="originPincode">Origin Pincode:</label>
+          <input type="text" id="originPincode" name="originPincode" required><br><br>
+
+          <label for="destinationPincode">Destination Pincode:</label>
+          <input type="text" id="destinationPincode" name="destinationPincode" required><br><br>
+
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" name="weight" required><br><br>
+
+          <button type="submit">Calculate Quote</button>
+      </form>
+
+      <div id="shippingCost" style="margin-top: 20px; font-weight: bold;"></div>
+  </div>
+</div>
+
       <div class="custom-caption">
         <h5>
           Delivering
@@ -174,18 +198,19 @@
         <h5>Track Your Shipment
         </h5>
       </div>
-      <div class="col-md-3 track-information  ">
-        <span class="mobile-span">Mobile No.  </span>
-        <span class="awb-span">AWB No.</span>
-        <span class="order-span">
+      <div class="col-md-3 track-information">
+        <span class="track-span mobile-span" id="track-span-1">Mobile No.  </span>
+        <span class="track-span awb-span" id="track-span-2">AWB No.</span>
+        <span class="track-span order-span" id="track-span-3">
           Order ID</span>
     
       </div>
-      <div class="col-md-6  section-input ">
-        <input type="search" name="" id="" placeholder="Enter AWB No">
-        <img src="images/RightArrowIcon.bb3461edbf82e09e28c5b85ec6175a1a.svg" class="right-arrow" alt="">
-        <button class="section-1-btn">search</button>
+      <div class="col-md-6 section-input">
+        <input type="search" name="" id="enter-no" placeholder=" 9e0re9ahf3e89oejj9o8jrv9er9ohherer89oo">
+        <img src="images/RightArrowIcon.bb3461edbf82e09e28c5b85ec6175a1a.svg" class="right-arrow" id="right-arr" alt="">
+        <button class="section-1-btn" id="searchButton">Search</button>
       </div>
+      
       
     </div>
     <div class="row tittle align-items-center  ">
@@ -679,8 +704,7 @@
       </div>
     <!-- container -->
   </div>
-
-
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>

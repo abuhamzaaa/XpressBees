@@ -5,7 +5,9 @@
     padding: 0;
     
     
+    
 }
+
 
 .navbar{
     width: 100%;
@@ -80,6 +82,7 @@
     
 }
 
+
 .navbar .navbar-expand-lg {
 
     list-style: none;
@@ -88,12 +91,31 @@
     position: absolute;
     
     left: 40%;
-    bottom: 65%;
-    width: 55%;
+    bottom: 40%;
+    width: 100%;
+    
     z-index: 1000;
     position: fixed;
     top:0; 
-    height: auto;
+    height: 35%;
+    
+}
+#getBackground{
+    
+    position: absolute;
+    top: 6%;
+    position: fixed;
+    z-index: 1000;
+    
+    width: 100vw !important;
+    
+    
+    height: 10vh !important;
+}
+.background-on-scroll{
+    background-color: aqua !important;
+    width: 100vw;
+    height:15vw ;
     
 }
 
@@ -290,15 +312,44 @@ font-weight: 350;
 }
 
 .awb-span{
+    
     background-color:  rgb(244, 244, 244);
     font-weight: 700;
     text-align: center;
+    cursor: pointer;
+    
+    
     
    
     
 }
+#track-span-1 {
+    cursor: pointer;
+    
+     /* Adjust padding as needed */
+}
+#track-span-2{
+    cursor: pointer;
+
+}
+#track-span-3{
+    cursor: pointer;
+}
+/* Additional styles to highlight span on hover */
+.track-span:hover {
+    background-color: lightblue;
+}
+.track-span{
+    z-index: 1000;
+}
+
+
+
+
 
 .track-information{
+    
+    cursor: pointer;
     
     width: auto;
     display: flex;
@@ -307,6 +358,7 @@ font-weight: 350;
     
     
 }
+
 
 .section-input input[type=search]{
     
@@ -337,15 +389,28 @@ font-weight: 350;
     
 
 }
+
+
 .right-arrow{
-    padding: 1.8vw 1.4vw;
-    border-radius: 0.4vw;
-    box-shadow: rgb(172, 84, 7) 0px 2px 0px;
-    background: rgb(247, 148, 29);
+    z-index: 1000;
+    
+    cursor: pointer;
     
  
     
    
+    
+}
+#right-arr{
+    cursor: pointer ;
+    z-index: 1000;
+    border: 2px solid black;
+   
+    padding: 1.8vw 1.4vw;
+    border-radius: 0.4vw;
+    box-shadow: rgb(172, 84, 7) 0px 2px 0px;
+    background: rgb(247, 148, 29);
+    background-color: red;
     
 }
 .track{
@@ -995,6 +1060,7 @@ border: none;
         margin-bottom: 9vw;
     }
     .track-information{
+        cursor: pointer;
         padding: 1vw 1vw;
         margin-right:0vw ;
         margin-left: 0vw !important;
@@ -1017,9 +1083,11 @@ border: none;
     }
     .track-information .mobile-span{
         padding: 2.5vw 2.5vw;
+        cursor: pointer;
     }
     .track-information .awb-span{
         padding: 2.5vw 5vw;
+        cursor: pointer;
 
 
     }
@@ -1029,9 +1097,11 @@ border: none;
     
     .track-information .order-span{
         padding: 2.5vw 4vw;
+        cursor: pointer;
     }
     .track-information{
         margin-top: 1.2vw;
+        cursor: pointer;
         width: 100%;
     }
     .track{
@@ -1210,6 +1280,7 @@ border: none;
     }
     
     .track-information{
+        cursor: pointer;
         width: 50%;
         margin-left: 1.7vw !important;
     }
@@ -1235,6 +1306,7 @@ border: none;
     }
   
     .track-information{
+        cursor: pointer;
         width: 8%;
     }
 
@@ -1394,3 +1466,79 @@ height: 15vh !important;
 
 
 }
+/* css for html model */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Center the form within the modal */
+form {
+    text-align: center;
+}
+
+/* Style form input and button */
+input[type="text"],
+input[type="number"],
+button[type="submit"] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border: 1px solid dodgerblue;
+}
+
+button[type="submit"] {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+

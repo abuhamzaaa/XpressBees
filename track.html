@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    #scroll-img{
+        position: absolute;
+        top: 48%;
+        left: 9%;
+        font-size: 1vw;
+        width: 16%;
+    }
+
+    .tsection-2{
+        width: 100%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin: 4vw ;
+        
+    }
+    .ship-info{
+        border: 2px solid red;
+        width: 75%;
+    
+        margin: 0 5vw;
+    }
+    .info{
+        margin:0 1.7vw;
+        
+    }
+    .child{
+        margin:0  3vw;
+    }
+    .track-u-shipment{
+        background-color: yellow;
+        padding: 2vw 3vw;
+        border-top-left-radius: 1.2vw;
+        border-bottom-left-radius: 1.2vw;
+        border: 2px solid black;
+        width: 38%;
+
+    }
+   
+
+   
+  </style>
+  <body>
+    <div class="navbar">
+
+        <div class="nav-top">
+          <p>Attention: Please be aware that there are currently fraudulent messages and emails being sent to
+            individual/franchisee prospects in an attempt to scam them.</p>
+        </div>
+        <div class="newbg">
+            <img src="images/newbg.jpg" alt="" width="100%">
+        </div>
+        <div id="getBackground">
+            <img src="images/whiteLogo.png" class="img" id="scroll-img" alt="">
+            <nav class="navbar navbar-expand-lg scroll-watcher">
+              <div class="container-fluid nav-hamberger ">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <!-- <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle color-white" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                      <a class="nav-link active color-white" aria-current="page" href="#">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link color-white" href="#">careers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link color-white" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle color-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle color-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link track-shipment" href="">Track Shipment</a>
+                    </li>
+                
+                  </ul>
+      
+                </div>
+              </div>
+            </nav>
+            </div>
+            <!-- section 2................. -->
+            <div class="tsection-2">
+                <div class="track-u-shipment child">
+                <img src="" alt="img">
+                <p>Track your shipment</p>
+            </div>
+            <div class="ship-info child">
+                <span class="info">MobileNo</span>
+                <span class="info">AWBNo</span>
+                <span class="info">OrderID</span>
+            </div>
+            <div class="enter-info child">
+                <input type="text" placeholder="Enter Mobile no">
+
+            </div>
+            <div class="robot-box child">
+                <input type="checkbox" name="" id="">
+                <span>i'm not a robot</span>
+                <span>
+                    <img src="" alt="recaptcha">
+                </span>
+            </div>
+            <div class="t-button child">
+                <img src="images/RightArrowIcon.bb3461edbf82e09e28c5b85ec6175a1a.svg" alt="">
+            </div>
+            </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
