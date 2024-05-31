@@ -198,3 +198,83 @@ function calculateShippingCost(destinationPincode, weight) {
       return "Destination not supported";
   }
 }
+//  // Prepopulate form with data when the modal is shown
+//  document.getElementById('exampleModal').addEventListener('show.bs.modal', function (event) {
+//     // Example data to prepopulate the form
+//     const prepopulatedData = {
+//       firstName: 'harry',
+//       lastName: 'maguire',
+//       emailId: 'harry.doe@example.com',
+//       phoneNumber: '1234567890'
+//     };
+
+//     // Set the values of the form fields
+//     document.getElementById('first-name').value = prepopulatedData.firstName;
+//     document.getElementById('last-name').value = prepopulatedData.lastName;
+//     document.getElementById('email-id').value = prepopulatedData.emailId;
+//     document.getElementById('ph-number').value = prepopulatedData.phoneNumber;
+//   });
+
+//   // Handle form submission
+//   document.getElementById('saveChanges').addEventListener('click', function () {
+//     // Collect form data
+//     const formData = {
+//       firstName: document.getElementById('first-name').value,
+//       lastName: document.getElementById('last-name').value,
+//       emailId: document.getElementById('email-id').value,
+//       phoneNumber: document.getElementById('ph-number').value
+//     };
+
+//     // Log the form data to the console (or process it as needed)
+//     console.log('Form Data:', formData);
+
+//     // Close the modal
+//     const modalInstance = bootstrap.Modal.getInstance(exampleModal);
+//     modalInstance.hide();
+
+//   });
+
+//   prepopulated data...
+document.addEventListener('DOMContentLoaded', function() {
+    // Show the table when "Ship Now" button is clicked
+    document.getElementById('showTableBtn').addEventListener('click', function() {
+        document.getElementById('tableContainer').classList.remove('hidden');
+        document.getElementById('formContainer').style.display='none';
+    });
+
+    // Add event listeners to "Edit" buttons in the table
+    document.querySelectorAll('.edit-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            // Get the row that contains the clicked button
+            const row = this.closest('tr');
+            // Get all cells in that row
+            const cells = row.querySelectorAll('td');
+            // get the text content from the cells
+            const name = cells[0].textContent;
+            const phone = cells[1].textContent;
+            const email = cells[2].textContent;
+            const age = cells[3].textContent;
+
+            // Populate the form with the extracted data
+            document.getElementById('name').value = name;
+            document.getElementById('ph-no').value = phone;
+            document.getElementById('email').value = email;
+            document.getElementById('age').value = age;
+
+            // Show the form and hide the table
+            document.getElementById('tableContainer').style.display = 'none';
+            document.getElementById('formContainer').style.display='block';
+        });
+    });
+
+
+    document.getElementById('editForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        console.log('Form data saved');
+
+    
+        document.getElementById('formContainer').classList.add('hidden');
+        document.getElementById('tableContainer').style.display = 'block';
+    });
+});

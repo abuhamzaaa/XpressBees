@@ -372,13 +372,116 @@
         <p>Get started with XpressBees Parcel Services
 
         </p>
-        <button class="sec-5-btn">Ship Now</button>
+        <button class="btn btn-primary sec-5-btn" id="showTableBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Ship Now</button>
       </div>
       <div class="col-md-5 sec-5 text-center">
         <p>Got Questions about our Services?
 
         </p>
-        <button class="sec-5-btn">Enquire Now</button>
+        <!-- <button class="sec-5-btn">Enquire Now</button> -->
+            <!-- Button trigger modal -->
+            
+<button type="button" class="btn btn-primary sec-5-btn" id="saveChanges" data-bs-toggle="modal" data-bs-target="#exampleModal">
+enquire now
+</button>
+<!-- prepopulated data table and form -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">XpressBees Parcel Services</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div id="tableContainer" class="table-container">
+                  <table class="table table-bordered">
+                      <thead class="thead-light">
+                          <tr>
+                              <th scope="col">Name</th>
+                              <th scope="col">Phone</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">Age</th>
+                              <th scope="col">Actions</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Harry</td>
+                              <td>1234566</td>
+                              <td>harry123@gmail.com</td>
+                              <td>19</td>
+                              <td><button class="btn btn-primary btn-sm edit-btn">Edit</button></td>
+                          </tr>
+                          <tr>
+                              <td>Iman</td>
+                              <td>9876533</td>
+                              <td>iman321@gmail.com</td>
+                              <td>18</td>
+                              <td><button class="btn btn-primary btn-sm edit-btn">Edit</button></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+
+              <div id="formContainer" class="form-container hidden form-section">
+                  <form id="editForm">
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="name" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="ph-no" class="form-label">Phone</label>
+                          <input type="number" class="form-control" id="ph-no" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="age" class="form-label">Age</label>
+                          <input type="number" class="form-control" id="age" required>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Save changes</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form action="">
+              <label for="first-name "></label>
+              <input type="text" id="first-name" class="input-size" placeholder="FirstName">
+              <br>
+              
+              <label for="last-name"></label>
+              <input type="text" id="last-name" class="input-size" placeholder="LastName">
+              <br>
+              <label for="email-id"></label>
+              <input type="text" id="email-id" class="input-size" placeholder="EmailID">
+              <br>
+              <label for="ph-number"></label>
+              <input type="number" id="ph-number" class="input-size" placeholder="PhoneNumber">
+
+          </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="saveChanges">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
     <!-- section-6... -->
@@ -708,6 +811,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
