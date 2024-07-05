@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var lastScrollTop = 0;
 
   window.addEventListener("scroll", function() {
+    // count the pixels of scrolling
       var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
       if (currentScroll > lastScrollTop) {
